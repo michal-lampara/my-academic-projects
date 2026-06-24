@@ -1,0 +1,136 @@
+:root{
+    --brown1: #231310;
+    --brown2: #48322f;
+    --brown3: #79634f;
+    --brown4: #ab9d79;
+    --brown5: #c2be96;
+    --white: rgb(236, 236, 236);
+    --black: rgb(37, 29, 29);
+    --yellow: #eee435;
+}
+html{
+    font-family: 'Roboto Regular', sans-serif;
+}
+body{
+    background: var(--brown5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    /*background-color: var(--background_color);*/
+}
+.gradient-text{
+    background: -webkit-linear-gradient(45deg, var(--yellow), var(--brown4));
+      background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+text{
+    background-color:transparent;
+    margin: 20px;
+    font-size: 50px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.font_on_black{
+    color: var(--white);
+}
+.font_on_white{
+    color: var(--black);
+}
+.space{
+    background-color:transparent;
+    height: 20px;
+}
+#header{
+    width: auto; height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: var(--brown1);
+    border-radius: 20px;
+}
+#menu{
+    width: auto; height: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: var(--brown2);
+    border-radius: 20px;
+    color: var(--brown1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+  margin-right: 20px;
+}
+.space_top{
+  margin-top: 60px;
+  margin-left: 20px;
+}
+#content {
+  margin-top: 10px; margin-left: 20px; margin-right: 20px; 
+  width: auto; height: 700px;
+  background-color: var(--brown3);
+   border-radius: 20px;
+}
+.content {
+  
+  margin-left: 150px;
+  margin-right: 150px;
+}
+#info{
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+#footer{
+    background-color: var(--brown1);
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  width: auto;  height: 60px;
+  border-radius: 20px;
+  color: var(--brown4);
+}
+.demo-icon{
+        font-size: 30px;
+        color: var(--brown4);
+}
+.link{
+    text-decoration: none;
+    text-align: center;
+    color: transparent;
+}
+
+h1 {
+  color: white;
+  font-size: 70px;
+}
+p {
+  color: white;
+}
+h2 {
+  color: white;
+}
+
+
+.wykrzyknikL {
+  float: left;
+}
+.wykrzyknikR {
+  float: right;
+}
+
+.zamow{
+  font-size: 18px;
+  color: white;
+}

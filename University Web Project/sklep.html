@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Moja strona</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/button.css" rel="stylesheet" type="text/css">
+  <link href="css/clock.css" rel="stylesheet" type="text/css">
+      <link href="css/fontello.css" type="text/css" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+</style>
+</head>
+
+<body>
+  <div id="header">
+    
+    <div class="left">
+      <div class="space"></div>
+       <div class="space"></div>
+      <div><text class="gradient-text">MOJA SUPER STRONA</text></div>
+      <div class="space"></div>
+      <div class="clock">
+        <script type = "text/javascript">
+          function dzien()
+          {
+              var today = new Date();
+              var d_week = today.getDay();
+          
+              document.getElementById("day").innerHTML = d_week + " dzień tygodnia";           
+              setTimeout("dzien()", 1000); 
+          }
+          
+          function czas()
+          {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              if(m<10) m = "0" + m;
+              if(s<10) s = "0" + s;
+                      
+                      
+              document.getElementById("timer").innerHTML = h + ":" + m + "," + s;
+              setTimeout("czas()", 1000);            
+          }
+  
+          function date()
+          {
+              var today = new Date();                    
+                      
+              document.getElementById("date").innerHTML = today;
+              setTimeout("date()", 1000);            
+          }
+  
+          window.addEventListener('load', dzien, false);
+          window.addEventListener('load', czas, false);
+          window.addEventListener('load', date, false);
+        </script>
+      <table bgcolor="transparent">
+          <tr>
+              <td>
+                  <font color="white" size="9">
+                      <div id="day"></div>
+                      <div id="timer"></div>
+                  </font>
+              </td>
+          </tr>
+      </table>
+    </div>  
+    </div>
+    
+    <div class="right">
+      <div class="space"></div>
+      <div class="space"></div>
+
+     <center> <img src="emotka.png" height="230"></center>
+    </div>
+
+
+  </div>
+
+  <div id="menu">
+    <div class="space"></div>
+    <button>
+      <span class="button_top"><a id="przycisk" href="index.html"> Strona Główna </a></span>
+    </button>
+    <button>
+      <span class="button_top"><a id="przycisk" href="prank.html"> Taki Żarcik </a></span>
+    </button>
+    <button>
+      <span class="button_top"><a id="przycisk" href="konto.html"> Baza Danych </a></span>
+    </button>
+    <button>
+      <span class="button_top"><a id="przycisk" href="sklep.html"> Sklep </a></span>
+    </button>
+    <div class="space"></div>
+  </div>
+ 
+    <div id="content">
+        <div class="content">
+            <div class="space"></div>
+            <div class="zamow">
+              <h1>SKLEP</h1>
+            <form action="koszyk.php" method="post">
+                <label for="ilosc_proc1">Ilość procesora i3 ( 300zł/1szt.):</label>
+                <input type="number" id="ilosc_proc1" name="ilosc_proc1" value="0" min="0">
+                <br>
+                <label for="ilosc_proc2">Ilość procesora i5 ( 800zł/1szt.):</label>
+                <input type="number" id="ilosc_proc2" name="ilosc_proc2" value="0" min="0">
+                <br>
+                <label for="ilosc_proc3">Ilość procesora i7 (1300zł/1szt.):</label>
+                <input type="number" id="ilosc_proc3" name="ilosc_proc3" value="0" min="0">
+                <br>
+                <label for="ilosc_proc4">Ilość procesora i9 (2000zł/1szt.):</label>
+                <input type="number" id="ilosc_proc4" name="ilosc_proc4" value="0" min="0">
+                <br><br>
+
+                <label for="ilosc_graf1">Ilość karty graficznej GTX1050 ( 700zł/1szt.):</label>
+                <input type="number" id="ilosc_graf1" name="ilosc_graf1" value="0" min="0">
+                <br>
+                <label for="ilosc_graf2">Ilość karty graficznej RTX2060 (1500zł/1szt.):</label>
+                <input type="number" id="ilosc_graf2" name="ilosc_graf2" value="0" min="0">
+                <br>
+                <label for="ilosc_graf3">Ilość karty graficznej RTX3070 (2500zł/1szt.):</label>
+                <input type="number" id="ilosc_graf3" name="ilosc_graf3" value="0" min="0">
+                <br>
+                <label for="ilosc_graf4">Ilość karty graficznej RTX4090 (4000zł/1szt.):</label>
+                <input type="number" id="ilosc_graf4" name="ilosc_graf4" value="0" min="0">
+                <br><br>
+
+                <label for="ilosc_dysk1">Ilość dysków HDD 1000 GB (200zł/1szt.):</label>
+                <input type="number" id="ilosc_dysk1" name="ilosc_dysk1" value="0" min="0">
+                <br>
+                <label for="ilosc_dysk2">Ilość dysków SSD 250 GB  ( 80zł/1szt.):</label>
+                <input type="number" id="ilosc_dysk2" name="ilosc_dysk2" value="0" min="0">
+                <br>
+                <label for="ilosc_dysk3">Ilość dysków SSD 500 GB  (160zł/1szt.):</label>
+                <input type="number" id="ilosc_dysk3" name="ilosc_dysk3" value="0" min="0">
+                <br>
+                <label for="ilosc_dysk4">Ilość dysków SSD 1000 GB (250zł/1szt.):</label>
+                <input type="number" id="ilosc_dysk4" name="ilosc_dysk4" value="0" min="0">
+                <br><br>
+
+                <input type="submit" value="Dodaj do koszyka">
+            </form>
+            </div>
+        </div>
+    </div>
+  
+  <div id="footer">
+    <div id="icons">
+      <a class="link" href="https://www.facebook.com" target="_blank"> <i class="demo-icon icon-facebook-squared"></i></a>
+      <a class="link" href="https://www.instagram.com" target="_blank"> <i class="demo-icon icon-instagram"></i></a>
+      <a class="link" href="https://www.youtube.com" target="_blank"> <i class="demo-icon icon-youtube-play"></i></a>
+            </div>
+  Copyright &copy; 2023 Michał Lampara
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Moja strona</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/button.css" rel="stylesheet" type="text/css">
+  <link href="css/clock.css" rel="stylesheet" type="text/css">
+      <link href="css/fontello.css" type="text/css" rel="stylesheet">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+</style>
+</head>
+
+<body>
+  <div id="header">
+    
+    <div class="left">
+      <div class="space"></div>
+       <div class="space"></div>
+      <div><text class="gradient-text">MOJA SUPER STRONA</text></div>
+      <div class="space"></div>
+      <div class="clock">
+        <script type = "text/javascript">
+          function dzien()
+          {
+              var today = new Date();
+              var d_week = today.getDay();
+          
+              document.getElementById("day").innerHTML = d_week + " dzień tygodnia";           
+              setTimeout("dzien()", 1000); 
+          }
+          
+          function czas()
+          {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              if(m<10) m = "0" + m;
+              if(s<10) s = "0" + s;
+                      
+                      
+              document.getElementById("timer").innerHTML = h + ":" + m + "," + s;
+              setTimeout("czas()", 1000);            
+          }
+  
+          function date()
+          {
+              var today = new Date();                    
+                      
+              document.getElementById("date").innerHTML = today;
+              setTimeout("date()", 1000);            
+          }
+  
+          window.addEventListener('load', dzien, false);
+          window.addEventListener('load', czas, false);
+          window.addEventListener('load', date, false);
+        </script>
+      <table bgcolor="transparent">
+          <tr>
+              <td>
+                  <font color="white" size="9">
+                      <div id="day"></div>
+                      <div id="timer"></div>
+                  </font>
+              </td>
+          </tr>
+      </table>
+    </div>  
+    </div>
+    
+    <div class="right">
+      <div class="space"></div>
+      <div class="space"></div>
+
+     <center> <img src="emotka.png" height="230"></center>
+    </div>
+
+
+  </div>
+
+  <div id="menu">
+    <div class="space"></div>
+    <button>
+      <span class="button_top"><a id="przycisk" href="index.html"> Strona Główna </a></span>
+    </button>
+    <button>
+      <span class="button_top"><a id="przycisk" href="prank.html"> Taki Żarcik </a></span>
+    </button>
+    <button>
+      <span class="button_top"><a id="przycisk" href="konto.html"> Baza Danych </a></span>
+    </button>
+    <button>
+      <span class="button_top"><a id="przycisk" href="sklep.html"> Sklep </a></span>
+    </button>
+    <div class="space"></div>
+  </div>
+ 
+  <div id="content">
+   <div class="content">
+     <div class="space"></div>
+  <center> <h1> Lorem ipsum</h1></center>
+     <br><br>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis diam nisl, sit amet bibendum arcu suscipit in. Morbi ut sapien at sapien fringilla malesuada nec at sapien. Morbi malesuada varius ipsum, pellentesque consequat nunc ullamcorper ac. Proin ultricies sapien ut ante posuere varius. Ut fermentum ornare libero vel commodo. In placerat diam a augue molestie, vitae tincidunt felis volutpat. Phasellus efficitur pellentesque metus, non finibus turpis dictum vitae. Nunc purus magna, pellentesque eu turpis in, feugiat sodales lorem. Morbi sodales arcu in nibh congue vestibulum. </p>
+     <br>
+   <h2> Quisque nec mauris</h2>
+   <p>Quisque nec mauris non sem cursus dignissim vel sit amet sem. Praesent vestibulum nibh aliquam, porttitor orci sed, varius odio. Proin rutrum laoreet rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis diam turpis, consectetur eu efficitur dictum, bibendum in nisl. Nulla facilisi. Nunc feugiat ante nec odio fringilla auctor. Nulla varius posuere viverra. Vestibulum magna urna, finibus et lacus eu, varius sollicitudin massa. Fusce vitae erat lectus. Fusce velit sapien, consequat at consequat et, interdum eget mauris. Duis non efficitur nulla. Nam vitae massa imperdiet, tristique velit non, tincidunt mi.</p>
+     <br>
+   <h2> Nunc quis pellentesque est</h2>
+   <p>Nunc quis pellentesque est, posuere sodales libero. Nam a leo euismod mauris hendrerit pharetra quis sit amet nunc. Praesent a aliquam felis. Nulla lobortis lobortis porttitor. Nullam ligula ex, tempus at porttitor sit amet, mattis congue massa. Curabitur ultrices ut dolor ac rutrum. Quisque aliquam sit amet lectus quis finibus. Donec mollis ante id sapien ullamcorper ultricies. Integer feugiat mi id justo cursus vehicula. Pellentesque lacinia et libero et hendrerit. Fusce dapibus diam et nisi ultricies condimentum. Fusce risus est, mattis sit amet lobortis ut, volutpat congue purus. Integer ut eros lorem. Pellentesque dictum, odio sed vestibulum tristique, nibh nulla dignissim nisl, in varius sem leo eget magna. Nullam consequat lacinia tincidunt.</p>
+   </div>
+ </div>
+  
+  <div id="footer">
+    <div id="icons">
+      <a class="link" href="https://www.facebook.com" target="_blank"> <i class="demo-icon icon-facebook-squared"></i></a>
+      <a class="link" href="https://www.instagram.com" target="_blank"> <i class="demo-icon icon-instagram"></i></a>
+      <a class="link" href="https://www.youtube.com" target="_blank"> <i class="demo-icon icon-youtube-play"></i></a>
+            </div>
+  Copyright &copy; 2023 Michał Lampara
+  </div>
+</body>
+
+</html>
